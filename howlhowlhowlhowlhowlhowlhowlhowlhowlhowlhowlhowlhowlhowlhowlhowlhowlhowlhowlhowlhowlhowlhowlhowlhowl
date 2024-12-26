@@ -1,7 +1,8 @@
+script_key="";
 getgenv().Howl = {
     ['Options'] = {
         Intro = true,
-        Type = "Target",
+        Type = "Target", -- Target Only For Now
         UpdateNotification = true,
         Keybind = {
             Aimbot = "E",
@@ -71,9 +72,6 @@ getgenv().Howl = {
         ['Autobuy'] = {
             ProximityDistance = 10,
         },
-        ['NoJumpCoolDown'] = {
-            Enabled = true,
-        },
         ["360"] = {
 		    Enabled = true,
 			Speed = 5600,
@@ -89,3 +87,5 @@ getgenv().Howl = {
         }
     }
 }
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/1de36ecdbf39c1906b74e5e76385b82e.lua"))()
