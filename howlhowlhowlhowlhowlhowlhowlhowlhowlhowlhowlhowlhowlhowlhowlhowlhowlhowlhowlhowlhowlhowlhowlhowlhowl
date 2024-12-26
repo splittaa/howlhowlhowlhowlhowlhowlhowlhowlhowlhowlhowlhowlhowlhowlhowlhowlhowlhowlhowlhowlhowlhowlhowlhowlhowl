@@ -1,0 +1,85 @@
+getgenv().Howl = {
+    Options = {
+        Type = "Target",
+        UpdateNotification = true,
+        Keybind = {
+            Aimbot = "E",
+            Resolver = "C",
+            AutoBuyKeyBind = "Z",
+            Macro = "X",
+        },
+    },
+    Combat = {
+        Aimbot = {
+            Prediction = 0.13,
+            Smoothness = 0.15,
+            Part = "Head",
+            PredictionAdjuster = false,
+            MultipleParts = {
+                Enabled = false,
+                Parts = { "Head", "UpperTorso", "HumanoidRootPart", "LowerTorso" },
+            },
+            Shake = {
+                Enabled = false,
+                Amount = 5,
+            },
+            MouseTp = {
+                Enabled = true,
+                Smoothness = 0.1,
+                Prediction = 0.2,
+                Part = "Head",
+            },
+        },
+        Silent = {
+            Prediction = 0.13,
+            Part = "HumanoidRootPart",
+            Mode = "Blatant",
+            PredictionAdjuster = false,
+            MultipleParts = {
+                Enabled = false,
+                Parts = { "Head", "UpperTorso", "HumanoidRootPart", "LowerTorso" },
+            },
+            Offsets = {
+
+                Jump = {Amount = 0.0015},
+
+                Fall = {Amount = 0.0050},
+            },
+        },
+    },
+    PredictionAdjuster = {
+        VelocityThreshold = 250,
+    },
+    Misc = {
+        Checks = {
+            KnockedChecks = true,
+            TargetDeath = false,
+            PlayerDeath = true,
+            WallCheck = false,
+            Resolver = {
+                Enabled = false,
+                Notification = true,
+            },
+        },
+        Macro = {
+            Enabled = true,
+            Speed = 2,
+            Type = "First", -- // "First", "Third", "Electron" (Dosen't use "Speed")
+        },
+        Autobuy = {
+            ProximityDistance = 10,
+        },
+        NoJumpCooldown = {
+            Enabled = false,
+        },
+    },
+    Cframe = {
+        Options = {
+            DefaultSpeed = 100,
+            Keybinds = {
+                ToggleMovement = "J",
+            },
+        Enabled = true,
+        },
+    },
+}
