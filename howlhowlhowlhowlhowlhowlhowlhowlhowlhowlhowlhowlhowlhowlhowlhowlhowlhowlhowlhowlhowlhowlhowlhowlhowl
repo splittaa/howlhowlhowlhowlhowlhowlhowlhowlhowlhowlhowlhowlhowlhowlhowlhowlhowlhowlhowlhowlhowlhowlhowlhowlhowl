@@ -73,8 +73,8 @@ getgenv().Howl = {
             ProximityDistance = 10,
         },
         ["360"] = {
-		    Enabled = true,
-			Speed = 5600,
+	    Enabled = true,
+	    Speed = 5600,
         },
     },
     ['Cframe'] = {
