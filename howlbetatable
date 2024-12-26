@@ -1,0 +1,49 @@
+getgenv().Howl = {
+    ['Startup'] = {
+	['License'] = "",
+        ['Intro'] = true,
+        ['Build'] = 'Latest', -- [[ don't change ]]
+        ['Watermark'] = true,
+        ['Resolver'] = {
+            ['Enabled'] = true,
+            ['Method'] = 'Recalculate' -- [[ Delta, Recalculate ]]
+        },
+    },
+    ['Bullet Redirection'] = {
+        ['Enabled'] = true,
+        ['TargetMode'] = 'FOV' -- [[ FOV, Target ]]
+        ['Mode'] = 'Streamable', -- [[ Streamable, Blatant ]]
+
+        ['Prediction'] = true, 
+        ['Method'] = 'Multiply', -- [[ Multiply, Divide ]]
+        ['PredictionX'] = 0.167,
+        ['PredictionY'] = 0.05,
+
+        ['AntiAimView'] = false,
+        ['ClosestPoint']  = false,
+        ['AntiCurve'] = false,
+        ['HitChance'] = 100,
+
+        ['Randomize'] = true,
+        ['Values'] = {
+            ['ValueX'] = 1,
+            ['ValueY'] = 1
+        },
+    },
+    ['Camlock'] = {
+        ['Enabled'] = true,
+        ['DisableWhileTyping'] = true,
+        ['DisableWhileReloading'] = true,
+        ['Prediction'] = true, 
+        ['PredictionX'] = 0.167,
+        ['PredictionY'] = 0.05,
+        ['Shake'] = {
+            ['Shake'] = true,
+            ['Values'] = {
+                ['ShakeX'] = 1,
+                ['ShakeY'] = 1,
+                ['ShakeZ'] = 1,
+            },
+        },
+    },
+}
